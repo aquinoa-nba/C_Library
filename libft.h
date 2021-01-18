@@ -6,7 +6,7 @@
 /*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 20:38:50 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/12/11 03:39:27 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/01/18 22:12:14 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,5 +71,6 @@ void			ft_lstiter(t_list *lst, void (*f)(void*));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 
 void			ft_itoa_base(unsigned int nb, int base);
+double			ft_atof(char *str);
 
 #endif
