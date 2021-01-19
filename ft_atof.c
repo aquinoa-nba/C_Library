@@ -6,7 +6,7 @@
 /*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/18 21:26:00 by aquinoa           #+#    #+#             */
-/*   Updated: 2021/01/18 23:08:28 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/01/19 15:12:40 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 typedef struct	s_args {
 	double	nb;
 	int		flag;
-	int		whole_frac;
+	long	whole_frac;
 	double	frac;
 	int		i;
 }				t_args;
