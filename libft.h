@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 20:38:50 by aquinoa           #+#    #+#             */
-/*   Updated: 2021/01/18 22:12:14 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/01/21 17:13:51 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,7 @@ void			ft_lstclear(t_list **lst, void (*del)(void*));
 void			ft_lstiter(t_list *lst, void (*f)(void*));
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 
+int				get_next_line(int fd, char **line);
 void			ft_itoa_base(unsigned int nb, int base);
 double			ft_atof(char *str);
 

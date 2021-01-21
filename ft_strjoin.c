@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/07 14:25:28 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/11/12 14:25:08 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/01/21 17:14:10 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		*s3++ = *s1++;
 	while (*s2)
 		*s3++ = *s2++;
-	*s3 = '\0';
+	s1 -= s1_len;
+	free((char*)s1);
 	return (s3 - s3_len);
 }
