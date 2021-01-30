@@ -6,7 +6,7 @@
 /*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 20:38:50 by aquinoa           #+#    #+#             */
-/*   Updated: 2021/01/28 20:03:43 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/01/30 23:55:46 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,5 +74,6 @@ int				get_next_line(int fd, char **line);
 void			ft_itoa_base(unsigned int nb, int base);
 double			ft_atof(char *str);
 int				ft_array_len(char **array);
+int				ft_strrncmp(const char *s1, const char *s2, size_t n);
 
 #endif
