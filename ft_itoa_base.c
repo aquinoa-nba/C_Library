@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/12/11 03:30:04 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/12/11 03:51:46 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:45:00 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_putnbr_base(unsigned int nb, int base)
+int	ft_putnbr_base(unsigned int nb, int base)
 {
 	if (nb >= 10)
 	{

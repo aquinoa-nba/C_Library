@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 20:26:46 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/11/12 15:54:28 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:44:42 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,8 @@ char	*ft_itoa(int n)
 	}
 	if (nbr < 0)
 		count++;
-	if (!(s = (char*)ft_calloc(count + 1, sizeof(char))))
+	s = (char *)ft_calloc(count + 1, sizeof(char));
+	if (!s)
 		return (NULL);
 	ft_represent(s, nbr, count);
 	return (s);

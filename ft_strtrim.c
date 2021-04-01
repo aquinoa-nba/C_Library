@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/08 18:33:03 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/11/12 22:46:03 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 22:03:36 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	*ft_copy(int begin, size_t end, const char *s1)
 	size_t	s2_len;
 
 	s2_len = end - begin + 1;
-	if (!(s2 = (char*)ft_calloc(s2_len + 1, sizeof(char))))
+	s2 = (char *)ft_calloc(s2_len + 1, sizeof(char));
+	if (!s2)
 		return (NULL);
 	ft_memcpy(s2, s1 + begin, s2_len);
 	return (s2);

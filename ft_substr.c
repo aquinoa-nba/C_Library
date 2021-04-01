@@ -3,14 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/06 16:16:06 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/12/01 20:27:08 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/04/01 03:21:36 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*new_str(unsigned int start, size_t *len, size_t str_len)
+{
+	char	*str;
+
+	if (*len > (str_len - start))
+		*len = str_len - start;
+	str = (char *)malloc(*len + 1);
+	if (!str)
+		return (NULL);
+	return (str);
+}
 
 char	*ft_substr(char const *str, unsigned int start, size_t len)
 {
@@ -24,14 +36,14 @@ char	*ft_substr(char const *str, unsigned int start, size_t len)
 	sub_str_len = 0;
 	if (start >= str_len)
 	{
-		if (!(sub_str = (char*)malloc(1)))
+		sub_str = (char *)malloc(1);
+		if (!sub_str)
 			return (NULL);
 	}
 	else
 	{
-		if (len > (str_len - start))
-			len = str_len - start;
-		if (!(sub_str = (char*)malloc(len + 1)))
+		sub_str = new_str(start, &len, str_len);
+		if (!sub_str)
 			return (NULL);
 		sub_str_len = len;
 		while (len--)

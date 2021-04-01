@@ -6,7 +6,7 @@
 /*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 14:38:33 by aquinoa           #+#    #+#             */
-/*   Updated: 2021/01/31 21:26:33 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:53:07 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_free_array(char **arr)
 	free(arr);
 }
 
-int		ft_word_count(char const *s, char c)
+int	ft_word_count(char const *s, char c)
 {
 	int	count;
 
@@ -57,7 +57,8 @@ char	**ft_filling(char **res, int i, char const *s, char c)
 		count++;
 		s++;
 	}
-	if (!(res[i] = (char*)ft_calloc(count + 1, sizeof(char))))
+	res[i] = (char *)ft_calloc(count + 1, sizeof(char));
+	if (!res[i])
 		ft_free_array(res);
 	count = 0;
 	while (*s2 && *s2 != c)
@@ -78,7 +79,8 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	word_count = ft_word_count(s, c);
-	if (!(res = (char**)ft_calloc(word_count + 1, sizeof(char*))))
+	res = (char **)ft_calloc(word_count + 1, sizeof(char *));
+	if (!res)
 		return (NULL);
 	i = 0;
 	while (*s)

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/02 19:43:08 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/11/12 15:41:17 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:38:33 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	bufsize;
 
 	bufsize = size * count;
-	if (!(buf = malloc(bufsize)))
+	buf = malloc(bufsize);
+	if (!buf)
 		return (NULL);
 	buf2 = buf;
 	while (bufsize > 0)

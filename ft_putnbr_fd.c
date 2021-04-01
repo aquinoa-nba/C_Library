@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 15:34:51 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/11/12 16:53:18 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:51:30 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char nbr;
+	char	nbr;
 
 	if (n == -2147483648)
 		ft_putstr_fd("-2147483648", fd);

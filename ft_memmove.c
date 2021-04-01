@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aquinoa <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/31 17:57:11 by aquinoa           #+#    #+#             */
-/*   Updated: 2020/11/12 16:37:45 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:50:38 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*dst_2;
-	const unsigned char *src_2;
+	const unsigned char	*src_2;
 
 	if (!dst && !src)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 20:38:50 by aquinoa           #+#    #+#             */
-/*   Updated: 2021/02/14 19:57:43 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 22:56:46 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-typedef	struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -73,7 +73,7 @@ t_list			*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 int				get_next_line(int fd, char **line);
 void			ft_itoa_base(unsigned int nb, int base);
 
-typedef struct	s_args {
+typedef struct s_args {
 	double	nb;
 	int		flag;
 	long	whole_frac;

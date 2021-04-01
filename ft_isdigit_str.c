@@ -6,13 +6,13 @@
 /*   By: aquinoa <aquinoa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/31 01:10:16 by aquinoa           #+#    #+#             */
-/*   Updated: 2021/01/31 01:55:51 by aquinoa          ###   ########.fr       */
+/*   Updated: 2021/03/31 21:41:39 by aquinoa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isdigit_str(char *str)
+int	ft_isdigit_str(char *str)
 {
 	while (*str)
 	{
